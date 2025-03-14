@@ -2,6 +2,7 @@
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
 a.navbar-brand[b-y9z2lkjsbj] {
   white-space: normal;
   text-align: center;
@@ -22,6 +23,7 @@ a[b-y9z2lkjsbj] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+  position: fixed;
 }
 
 .border-top[b-y9z2lkjsbj] {
@@ -40,10 +42,125 @@ button.accept-policy[b-y9z2lkjsbj] {
   line-height: inherit;
 }
 
-.footer[b-y9z2lkjsbj] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+/*
+    Header
+*/
+
+.header-background-image[b-y9z2lkjsbj] {
+    /*    background-image: url('/images/sunset-palms.jpg');
+    min-height: 200px;
+    object-position: bottom;
+    background-size: cover;
+    background-position: center;*/
+    background-color: #111111;
+    color: white;
 }
+
+.header-background[b-y9z2lkjsbj] {
+    /*    background: linear-gradient(#BCD4DE, #A5CCD1);*/
+}
+
+.sticky[b-y9z2lkjsbj] {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.header-adjustment[b-y9z2lkjsbj] {
+    margin-top: 150px;
+}
+
+/*
+    Footer
+*/
+.footer[b-y9z2lkjsbj] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 20px;
+    padding: 10px;
+    color: #f0ebd8;
+    border-top: 5px solid black;
+}
+
+.footer-background-image[b-y9z2lkjsbj] {
+/*    background-image: url('/images/sunset-tracks.jpg');
+    min-height: 150px;
+    object-position: bottom;
+    background-size: cover;
+    background-position: bottom;*/
+    background-color: #111111;
+}
+
+.footer-adjustment[b-y9z2lkjsbj] {
+    margin-bottom: 200px;
+}
+
+
+/*
+    Light/Dark Mode Switch
+*/
+/* The switch - the box around the slider */
+.switch[b-y9z2lkjsbj] {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input[b-y9z2lkjsbj] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider[b-y9z2lkjsbj] {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider[b-y9z2lkjsbj]:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider[b-y9z2lkjsbj] {
+    background-color: #2196F3;
+}
+
+input:focus + .slider[b-y9z2lkjsbj] {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider[b-y9z2lkjsbj]:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round[b-y9z2lkjsbj] {
+    border-radius: 34px;
+}
+
+    .slider.round[b-y9z2lkjsbj]:before {
+        border-radius: 50%;
+    }

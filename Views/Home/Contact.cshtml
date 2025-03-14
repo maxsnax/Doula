@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>I would love to hear from you.</p>
+
+
+<div class="column" style="padding-top: 10px; padding-bottom: 10px;">
+    <div class="row">
+        <div class="label-column" style="justify-content: right;">
+            <p class="label">Name:</p>
+        </div>
+        <div class="column">
+            <input class="input" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="label-column" style="justify-content: right;">
+            <p class="label">Email:</p>
+        </div>
+        <div class="column">
+            <input class="input" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="label-column" style="justify-content: right;">
+            <p class="label">Message:</p>
+        </div>
+        <div class="column">
+            <textarea class="message" minlength="1" maxlength="620"
+                placeholder=""></textarea>
+            <button class="submit-button">Submit Message</button>
+        </div>
+    </div>
+</div>

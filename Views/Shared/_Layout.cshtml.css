@@ -1,6 +1,7 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -21,6 +22,7 @@ a {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+  position: fixed;
 }
 
 .border-top {
@@ -39,10 +41,125 @@ button.accept-policy {
   line-height: inherit;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+/*
+    Header
+*/
+
+.header-background-image {
+    /*    background-image: url('/images/sunset-palms.jpg');
+    min-height: 200px;
+    object-position: bottom;
+    background-size: cover;
+    background-position: center;*/
+    background-color: #111111;
+    color: white;
 }
+
+.header-background {
+    /*    background: linear-gradient(#BCD4DE, #A5CCD1);*/
+}
+
+.sticky {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.header-adjustment {
+    margin-top: 150px;
+}
+
+/*
+    Footer
+*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 20px;
+    padding: 10px;
+    color: #f0ebd8;
+    border-top: 5px solid black;
+}
+
+.footer-background-image {
+/*    background-image: url('/images/sunset-tracks.jpg');
+    min-height: 150px;
+    object-position: bottom;
+    background-size: cover;
+    background-position: bottom;*/
+    background-color: #111111;
+}
+
+.footer-adjustment {
+    margin-bottom: 200px;
+}
+
+
+/*
+    Light/Dark Mode Switch
+*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }

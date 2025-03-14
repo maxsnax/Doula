@@ -1,5 +1,15 @@
+/*:root {
+    --brown: #813405;
+    --example: #D45113;
+    --warning-color: #e74c3c;
+    --text-dark: #333;
+}*/
+
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -12,11 +22,123 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+/*body {
+    background-color: #232323 !important;
+    color: white !important;
+}*/
+
+.body-width-adjustment {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-body {
-  margin-bottom: 60px;
+.strokeme {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/*
+    Buttons
+*/
+button {
+    padding: 10px;
+/*    background-color: #575757;
+    color: white;*/
+    font-family: Bahnschrift;
+    border: black;
+}
+
+/*
+    Home Page
+*/
+
+
+.introduction {
+    justify-content: center;
+    text-align: center;
+    background: #343434;
+    width: 100%;
+    padding: 35px;
+    margin: 0 auto;
+    border-width: 10px;
+    border: outset;
+    border-color: #000000;
+    font-family: Papyrus;
+}
+
+.background-image {
+    background-image: url('/images/sunset-palms-2.jpg');
+    min-height: 200px;
+    object-position: bottom;
+    background-size: cover;
+    background-position: center;
+    /*    background-color: #111111;
+    color: white;*/
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.tri-column {
+    float: left;
+    width: 33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bordered {
+    border: solid, black, 1px;
+    border-radius: 80px;
+    padding-top: 15px;
+}
+
+.quote-text {
+    text-align: center;
+    align-self: center;
+    font-family: "Lucida Handwriting";
+}
+
+/*
+    Contact Page
+*/
+.label {
+    height: 30px;
+    text-align: right;
+    align-content: center;
+}
+
+.input {
+    height: 30px;
+    width: 50%;
+    min-width: 200px;
+}
+
+.message {
+    height: 250px;
+    width: 100%;
+    min-width: 200px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.label-column {
+    float: left;
+    width: 20%;
+    min-width: 100px;
+}
+
+.submit-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    min-width: 200px;
+    width: 50%;
 }
