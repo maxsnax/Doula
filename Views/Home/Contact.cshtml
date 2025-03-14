@@ -1,36 +1,65 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
-<h1>@ViewData["Title"]</h1>
+<h1 style="text-align: center;">@ViewData["Title"]</h1>
 
-<p>I would love to hear from you.</p>
+<div class="container d-flex flex-col">
 
+    <div class="col" style="width:20%; display: flex; flex-direction: column; white-space: normal;">
+        <div>
+            <p>If you would like to get in contact with me you can send an email to me here using the message box.
+               <br />
+               <br />
+               Alternatively you can email me at:<br />
+               <a href="mailto:surelyreim@yahoo.com">surelyreim@yahoo.com</a>
+           
+               <br />
 
-<div class="column" style="padding-top: 10px; padding-bottom: 10px;">
-    <div class="row">
-        <div class="label-column" style="justify-content: right;">
-            <p class="label">Name:</p>
+               If you'd like to reach out to me on my socials:
+            </p>
         </div>
-        <div class="column">
-            <input class="input" />
+        <!--
+        <div class="icon-container col" style="display: flex-start; flex-flow: column wrap;">
+            <img src="/icons/facebook.png" class="icon row" />
+            <img src="/icons/instagram.png" class="icon row" />
+            <img src="/icons/twitter.png" class="icon row" />
+        </div>
+        -->
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col d-flex flex-column" style="padding-top: 10px; padding-bottom: 10px;">
+
+        <div class="container" >
+            <div class="col">
+                <p class="label">Name:</p>
+            </div>
+            <div class="col">
+                <input class="input" />
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col">
+                <p class="label">Email:</p>
+            </div>
+            <div class="col">
+                <input class="input" />
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col">
+                <p class="label">Message:</p>
+            </div>
+            <div class="col">
+                <textarea class="message" minlength="1" maxlength="620"
+                          placeholder=""></textarea>
+                <button class="submit-button">Submit Message</button>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="label-column" style="justify-content: right;">
-            <p class="label">Email:</p>
-        </div>
-        <div class="column">
-            <input class="input" />
-        </div>
-    </div>
-    <div class="row">
-        <div class="label-column" style="justify-content: right;">
-            <p class="label">Message:</p>
-        </div>
-        <div class="column">
-            <textarea class="message" minlength="1" maxlength="620"
-                placeholder=""></textarea>
-            <button class="submit-button">Submit Message</button>
-        </div>
-    </div>
+
 </div>
+

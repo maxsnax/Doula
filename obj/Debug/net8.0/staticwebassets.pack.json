@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\icons\\facebook.png",
+      "PackagePath": "staticwebassets\\icons\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\icons\\instagram.png",
+      "PackagePath": "staticwebassets\\icons\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\icons\\twitter.png",
+      "PackagePath": "staticwebassets\\icons\\twitter.png"
+    },
+    {
       "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\images\\oli.jpg",
       "PackagePath": "staticwebassets\\images\\oli.jpg"
     },
