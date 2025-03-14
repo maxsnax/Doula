@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Doula")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7758468e82294b35aa9fb87189abce8897598a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43f27f3cb905571089ef3d5f53f2d4a4220e289a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Doula")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Doula")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
