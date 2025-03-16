@@ -1,11 +1,3 @@
-/*:root {
-    --brown: #813405;
-    --example: #D45113;
-    --warning-color: #e74c3c;
-    --text-dark: #333;
-}*/
-
-
 html {
     font-size: 14px;
     position: relative;
@@ -22,10 +14,10 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-/*body {
-    background-color: #232323 !important;
-    color: white !important;
-}*/
+body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
 
 .body-width-adjustment {
     margin-left: 10%;
@@ -37,15 +29,64 @@ html {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmode {
+    --base-color: #0D1321;
+    --base-variant: #1D2D44;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.secondary {
+   background-color: var(--base-variant);
+   border: outset 1px black;
+}
+
+#theme-switch svg {
+    fill: var(--primary-color);
+}
+#theme-switch svg:last-child {
+    display: none;
+}
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+
+
+
 /*
     Buttons
 */
 button {
-    padding: 10px;
 /*    background-color: #575757;
     color: white;*/
     font-family: Bahnschrift;
-    margin: 10px;
 }
 
 /*
@@ -133,6 +174,7 @@ button {
     width: 33%;
     text-align: left;
     min-width: 200px;
+    background-color: var(--base-variant)
 }
 
 h3 {
@@ -145,22 +187,18 @@ h3 {
 */
 .label {
     height: 30px;
-/*    text-align: right;*/
     align-content: center;
 }
 
 .input {
     height: 30px;
-/*    width: 50%;*/
-/*    min-width: 200px;*/
-    max-width: none;
+    width: 100%;
 }
 
 .message {
     height: 250px;
     width: 100%;
-/*    min-width: 200px;*/
-
+    /* Padding for text inside the message box */
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -175,6 +213,6 @@ h3 {
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
-/*    min-width: 200px;*/
-    width: 50%;
+    width: 100%;
+    margin-right: 20px;
 }

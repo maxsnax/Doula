@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Etl7KoGftm9HCkRyxmjXN8lRJjt7QoZXPmUD7X/UyNI=",
+  "Hash": "oufx9dDTwct1n+uSEW0d8w7dymRdV4CMRsBm7cXnFnw=",
   "Source": "Doula",
   "BasePath": "_content/Doula",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\sunset-tracks.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\js\\color-mode.js",
+      "SourceId": "Doula",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\",
+      "BasePath": "_content/Doula",
+      "RelativePath": "js/color-mode.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\color-mode.js"
     },
     {
       "Identity": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\js\\site.js",

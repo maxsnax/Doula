@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\sunset-tracks.jpg"
     },
     {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\js\\color-mode.js",
+      "PackagePath": "staticwebassets\\js\\color-mode.js"
+    },
+    {
       "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
