@@ -45,19 +45,8 @@ button.accept-policy[b-y9z2lkjsbj] {
 /*
     Header
 */
-
-.header-background-image[b-y9z2lkjsbj] {
-    /*    background-image: url('/images/sunset-palms.jpg');
-    min-height: 200px;
-    object-position: bottom;
-    background-size: cover;
-    background-position: center;*/
-    background-color: #111111;
-    color: white;
-}
-
 .header-background[b-y9z2lkjsbj] {
-    /*    background: linear-gradient(#BCD4DE, #A5CCD1);*/
+    background: var(--primary-color);
 }
 
 .sticky[b-y9z2lkjsbj] {
@@ -75,13 +64,16 @@ button.accept-policy[b-y9z2lkjsbj] {
     Footer
 */
 .disclaimer[b-y9z2lkjsbj] {
-    margin-left: 1%;
-    margin-right: 1%;
+/*    margin-left: min(1%, 10px);
+    margin-right: min(1%, 10px);*/
+    margin: min(1%, 10px);
     text-align: left;
     word-wrap: break-word;
     white-space: normal;
     font-size: 12px;
+    justify-content: center;
     align-content:center;
+    color: white;
 }
 
 .footer[b-y9z2lkjsbj] {
@@ -91,36 +83,25 @@ button.accept-policy[b-y9z2lkjsbj] {
     white-space: nowrap;
     line-height: 20px;
     padding: 10px;
-    color: #f0ebd8;
-    border-top: 5px solid black;
+    color: white;
+    padding-top: 20px;
+/*    border-top: 5px solid black;*/
 }
 
 .footer-background-image[b-y9z2lkjsbj] {
-/*    background-image: url('/images/sunset-tracks.jpg');
-    min-height: 150px;
-    object-position: bottom;
-    background-size: cover;
-    background-position: bottom;*/
-    background-color: #111111;
+    background: linear-gradient( to right, #7400B8, #5390D9);
 }
 
 .footer-adjustment[b-y9z2lkjsbj] {
     margin-bottom: 200px;
 }
 
-.icon-container[b-y9z2lkjsbj] {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
 .icon[b-y9z2lkjsbj] {
     padding-left: 1%;
     padding-right: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin: min(1%, 10px);
+    width: clamp(25px, 30px, 40px);
+    height: clamp(25px, 30px, 40px);
 }
 
 /*

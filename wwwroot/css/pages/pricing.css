@@ -1,0 +1,38 @@
+﻿/*
+    Pricing
+*/
+#page-body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.card {
+   width: max(20%, 300px);
+}
+
+h2 {
+    text-align: left;
+    font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.description {
+    text-align: left !important;
+    color: var(--secondary-text);
+}
+
+button {
+    min-width: fit-content;
+    width: 50%;
+}
+
+.price-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

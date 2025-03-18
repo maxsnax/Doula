@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\Doula.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\css\\pages\\aboutme.css",
+      "PackagePath": "staticwebassets\\css\\pages\\aboutme.css"
+    },
+    {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\css\\pages\\contact.css",
+      "PackagePath": "staticwebassets\\css\\pages\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\css\\pages\\home.css",
+      "PackagePath": "staticwebassets\\css\\pages\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\css\\pages\\pricing.css",
+      "PackagePath": "staticwebassets\\css\\pages\\pricing.css"
+    },
+    {
       "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -1,0 +1,83 @@
+﻿/*
+    Home Page
+*/
+
+.introduction {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    border-width: 10px;
+    font-family: Papyrus;
+}
+
+.portrait {
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.background-image {
+    background-image: url('/images/sunset-palms-2.jpg');
+    min-height: 200px;
+    object-position: bottom;
+    background-size: cover;
+    background-position: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.tri-column {
+    float: left;
+    width: 33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bordered {
+    border: solid, 1px;
+    border-radius: 80px;
+    padding-top: 15px;
+}
+
+.introduction-contact {
+    width: 50%;
+    min-width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-text {
+    text-align: center;
+    align-self: center;
+    font-family: "Lucida Handwriting";
+    padding-bottom: 15px;
+}
+
+.support {
+    border-top: 1px solid;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.services {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    width: 33%;
+    text-align: left;
+    min-width: 200px;
+    background-color: var(--base-accent);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    color: var(--primary-text);
+}

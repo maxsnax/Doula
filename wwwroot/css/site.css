@@ -1,3 +1,13 @@
+/*
+    Site-wide stylings for html, body, buttons, header, footer
+*/
+
+/*
+    purple: #7400B8;
+    dark-blue: #5e60CE;
+    blue: #5390D9;
+*/
+
 html {
     font-size: 14px;
     position: relative;
@@ -29,23 +39,50 @@ body {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+h1 {
+    text-align: center;
+    background: linear-gradient(to left, #7400B8, #5390D9);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    padding: 5px;
+}
 
-:root{
-    --base-color: white;
-    --base-variant: #e8e9ed;
-    --text-color: #111528;
-    --secondary-text: #232738;
-    --primary-color: #3a435d;
-    --accent-color: #0071ff;
+.color-border {
+    background: linear-gradient( to right, #7400B8, #5390D9);
+    background-size: 100% 5px; /* if linear-gradient, we need to resize it */
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--text-color)
+}
+
+
+/*
+    Light Mode/Dark Mode Stylings
+*/
+:root {
+    --base-color: white; /* Body background color */
+    --base-variant: #e8e9ed; /* Used for cards background color */
+    --base-accent: white; /* Background for items inside of cards */
+    --text-color: #111528; /* Primary color for titles */
+    --secondary-text: #232738; /* Secondary color for information */
+    --primary-color: #18181b; /* Navigation bars and buttons */
+    --secondary-color: #5390D9; /* Secondary button hover color */
+    --accent-color: #121212; /* Soft highlight for borders/dividers  */
 }
 
 .darkmode {
-    --base-color: #0D1321;
-    --base-variant: #1D2D44;
-    --text-color: #ffffff;
-    --secondary-text: #a4a5b8;
-    --primary-color: #3a435d;
-    --accent-color: #0071ff;
+    --base-color: #121212; /* Body background color */
+    --base-variant: #29282b; /* Used for cards background color */
+    --base-accent: gray; /* Background for items inside of cards */
+    --text-color: #ffffff; /* Primary color for titles */
+    --secondary-text: #a5a5a7; /* Secondary color for information */
+    --primary-color: #18181b; /* Navigation bars and buttons */
+    --secondary-color: #5e60CE; /* Secondary button hover color */
+    --accent-color: #4c4b4e; /* Soft highlight for borders/dividers  */
 }
 
 #theme-switch {
@@ -57,11 +94,6 @@ body {
     display:flex;
     justify-content: center;
     align-items:center;
-}
-
-.secondary {
-   background-color: var(--base-variant);
-   border: outset 1px black;
 }
 
 #theme-switch svg {
@@ -77,6 +109,10 @@ body {
     display: block;
 }
 
+/*
+    
+*/
+
 
 
 
@@ -84,135 +120,17 @@ body {
     Buttons
 */
 button {
-/*    background-color: #575757;
-    color: white;*/
     font-family: Bahnschrift;
+    background-color: #a866d1;
+    color: white;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 15px;
+    border-color: var(--accent-color);
 }
 
-/*
-    Home Page
-*/
-
-.introduction {
-    justify-content: center;
-    text-align: center;
-/*    background: #343434;*/
-    width: 100%;
-/*    padding: 35px;*/
-    margin: 0 auto;
-    border-width: 10px;
-/*    border: outset;*/
-    font-family: Papyrus;
-}
-
-.portrait {
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-}
-
-.background-image {
-    background-image: url('/images/sunset-palms-2.jpg');
-    min-height: 200px;
-    object-position: bottom;
-    background-size: cover;
-    background-position: center;
-    /*    background-color: #111111;
-    color: white;*/
-}
-
-
-.column {
-    float: left;
-    width: 50%;
-}
-
-.tri-column {
-    float: left;
-    width: 33%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.bordered {
-    border: solid, 1px;
-    border-radius: 80px;
-    padding-top: 15px;
-}
-
-.introduction-contact {
-    width: 50%;
-    min-width: 200px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.quote-text {
-    text-align: center;
-    align-self: center;
-    font-family: "Lucida Handwriting";
-    padding-bottom: 15px;
-}
-
-.support {
-    border-top: 1px solid;
-    padding-top: 25px;
-    margin-top: 25px;
-}
-
-.services {
-    border: 1px solid;
-    padding: 10px;
-    margin: 10px;
-    width: 33%;
-    text-align: left;
-    min-width: 200px;
-    background-color: var(--base-variant)
-}
-
-h3 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/*
-    Contact Page
-*/
-.label {
-    height: 30px;
-    align-content: center;
-}
-
-.input {
-    height: 30px;
-    width: 100%;
-}
-
-.message {
-    height: 250px;
-    width: 100%;
-    /* Padding for text inside the message box */
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.label-column {
-    float: left;
-    width: 100px;
-/*    min-width: fit-content;*/
-}
-
-.submit-button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    width: 100%;
-    margin-right: 20px;
+button:hover {
+    box-shadow: 0px 0px 10px #c799e1;
+    background-color: white;
+    color: purple;
 }
