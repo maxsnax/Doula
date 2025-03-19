@@ -55,8 +55,9 @@ h1 {
 
 h3 {
     text-align: center;
-    margin-top: 10px;
-    color: var(--text-color)
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -72,6 +73,9 @@ h3 {
     --primary-color: #18181b; /* Navigation bars and buttons */
     --secondary-color: #5390D9; /* Secondary button hover color */
     --accent-color: #121212; /* Soft highlight for borders/dividers  */
+    --purple: #7400B8;
+    --dark-blue: #5e60CE;
+    --blue: #5390D9;
 }
 
 .darkmode {
@@ -109,11 +113,14 @@ h3 {
     display: block;
 }
 
+
 /*
-    
+    Cards
 */
-
-
+.card {
+    /*    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1) !important;*/
+    box-shadow: 2px 2px 2px var(--purple) !important;
+}
 
 
 /*

@@ -1,1 +1,16 @@
 ﻿
+.portrait {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    width: max(40rem, 50%);
+}
+
+.portrait-img {
+    width: max(20rem, 100%);
+}
+
+.bio {
+    width: max(40rem, 50%);
+}

@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\icons\\instagram.png"
     },
     {
+      "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\icons\\logo.png",
+      "PackagePath": "staticwebassets\\icons\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\Max\\source\\repos\\Doula\\wwwroot\\icons\\twitter.png",
       "PackagePath": "staticwebassets\\icons\\twitter.png"
     },

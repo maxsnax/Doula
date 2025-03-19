@@ -59,6 +59,11 @@ button.accept-policy[b-y9z2lkjsbj] {
     margin-top: 150px;
 }
 
+#logo[b-y9z2lkjsbj] {
+
+}
+
+
 /*
     Footer
 */
@@ -134,17 +139,17 @@ button.accept-policy[b-y9z2lkjsbj] {
     transition: .4s;
 }
 
-    .slider[b-y9z2lkjsbj]:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
+.slider[b-y9z2lkjsbj]:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
 input:checked + .slider[b-y9z2lkjsbj] {
     background-color: #2196F3;

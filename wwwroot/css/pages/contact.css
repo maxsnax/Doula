@@ -8,14 +8,21 @@
 
 .input {
     height: 30px;
-    width: 100%;
+    width: max(100%, 300px);
+    margin: 0 auto;
+}
+
+.contact {
+    width: max(100%, 300px);
+    margin: 0 auto;
 }
 
 .message {
     height: 250px;
-    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 0 auto;
+    width: max(100%, 300px);
 }
 
 .label-column {
